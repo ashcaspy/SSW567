@@ -28,7 +28,7 @@ class TestClassifyTriangle:
     ]
 
     invalidTriangleCases = [
-        [0, 0, 0, ],
+        [0, 0, 0 ],
         [None, None, None],
         [-1, -1, -1],
         [10, 0, 10],
