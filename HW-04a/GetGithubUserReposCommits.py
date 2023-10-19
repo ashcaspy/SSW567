@@ -40,6 +40,7 @@ def get_user_repos_commits(userId: str, printList: bool = True, debug: bool = Fa
                     got_all = False
                     max_get = 10
                     repoCommits = 0
+                    pageNum = 1
                     while not got_all and pageNum <= max_get:
                         commitResponse = requests.get(commitURL.format(id = userId, repo = repoName, pagenum = pageNum))
                         requestStatusCode = max(requestStatusCode, commitResponse.status_code)
