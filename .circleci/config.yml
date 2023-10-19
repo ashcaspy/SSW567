@@ -10,6 +10,8 @@ jobs:
       - run: 
           command: |
             pip install pytest
+            pip install requests
+            pip install tabulate
             pytest --junitxml=test-results/junit.xml HW-02a/TestTriangle.py
             pytest --junitxml=test-results/junit.xml HW-04a/TestGetGithubUserReposCommits.py
       - store_test_results:

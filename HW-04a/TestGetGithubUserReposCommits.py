@@ -5,7 +5,6 @@
 from datetime import datetime
 import requests
 import pytest
-from tabulate import tabulate
 from GetGithubUserReposCommits import get_user_repos_commits
 
 # Define Test Cases
